@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  line-height: inherit;
+  background-color: rgb(229, 231, 235);
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(107, 114, 128);
+}
+
+.card {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(107, 114, 128, 0.4) 0px 10px 15px -3px, rgba(107, 114, 128, 0.4) 0px 4px 6px -4px;
+}
+
+.card-divider {
+  margin: 10px 0;
+  height: 1px;
+  background-color: #eee;
+}
+
+.hd {
+  background-color: #fff;
+  padding: 10px 16px;
+  color: rgb(55, 65, 81);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  overflow: hidden;
+}
+
+.hd ._inner {
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+}
+
+.hd img {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+}
+
+.bd {
+  display: flex;
+  margin: 20px auto;
+  width: 860px;
+}
+
+.preview {
+  flex: 1;
+  min-width: 0;
+}
+.video-box {
+  position: relative;
+  width: 100%;
+}
+.preview video {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.preview canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.result {
+  width: 250px;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.result ol {
+  margin: 5px 0;
+  padding-left: 20px;
+}
+
+.result kbd {
+  padding: 4px 6px;
+  background-color: rgb(243, 244, 246);
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  line-height: 24px;
+}
+
+.result-list li {
+  margin: 6px 0;
+  width: 48%;
+}
+.result-list li:nth-child(2n) {
+  margin-left: 4%;
+}
+
+.progress {
+  position: relative;
+  background-color: rgb(229, 231, 235);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #fff;
+  height: 12px;
+  border-radius: 6px;
+}
+
+.progress ._inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+  background-color: rgb(28, 100, 242);
+}
+
+.progress ._text {
+  padding: 0 4px;
+}
+
+.debug {
+  position: relative;
+  margin: 10px 0;
+  border-top: 1px solid #eee;
+  padding: 8px 0;
+  line-height: 16px;
+}
+
+.debug input {
+  vertical-align: middle;
+  margin: 0 4px 0;
+  width: 16px;
+  height: 16px;
+  vertical-align: bottom;
+}
+
+.mobile {
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .hd {
+    padding: 0 16px;
+    min-height: 52px;
+  }
+
+  .bd {
+    position: relative;
+    margin: 0;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  .preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden;
+  }
+
+  .video-box {
+    width: 100%;
+    height: 100%;
+  }
+
+  .preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .result {
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  .debug {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    margin: 0;
+    border: none;
+    background-color: #fff;
+    padding: 4px;
+  }
+
+  .result {
+    width: 100%;
+    margin-left: 0;
+    box-sizing: border-box;
+  }
+
+  .result-list li {
+    margin: 6px 0;
+    width: 30%;
+  }
+  .result-list li:nth-child(3n + 2) {
+    margin-left: 4%;
+  }
+  .result-list li:nth-child(3n + 3) {
+    margin-left: 4%;
+  }
+}
+
+.debug ._change {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.debug-source input {
+  margin: 8px 0;
+  max-width: 100%;
+  color: #444;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgb(209, 213, 219);
+}
+
+.debug-source input[type='file']::file-selector-button {
+  color: white;
+  background: #1f2937;
+  border: 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  -webkit-margin-start: -1rem;
+  margin-inline-start: -1rem;
+  -webkit-margin-end: 1rem;
+  margin-inline-end: 1rem;
+}
+
+.debug-source input[type='file']::file-selector-button:hover {
+  background: #374151;
+}
